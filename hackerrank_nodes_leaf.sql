@@ -5,6 +5,6 @@ SELECT
         WHEN N in (SELECT DISTINCT P FROM BST)
             THEN CONCAT(N, ' Inner')
         ELSE CONCAT(N, ' Leaf')
-    END as type_of_tree
+    END as node_type
 FROM BST
 ORDER BY N
